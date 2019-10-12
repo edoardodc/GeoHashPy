@@ -1,19 +1,7 @@
 import json
+import requests
 
-a = 0
+g = geocoder.ip('199.7.157.0')
 
-with open('FountainData.json', 'r') as data_file:
-    data = json.load(data_file)
-
-for element in data:
-    if 'id' in element:
-         a = a + 1
-         print(element['id'])
-         print(a)
-         del element['id']
-
-
-with open('FountainData.json', 'w') as data_file:
-    myData = json.dump(data, data_file, indent=4)
-
-print('Finished!')
+print(g = geocoder.ip('me'))
+print(g.latlng)
