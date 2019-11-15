@@ -18,7 +18,5 @@ with open('SmallData.json', 'r') as outfile:
 with open('SmallData.json', 'w') as outfile:
     json.dump(data, outfile, indent=4)
 
-
-
 print(data)
 
