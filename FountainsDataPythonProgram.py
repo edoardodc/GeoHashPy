@@ -14,7 +14,8 @@ with open('SmallData.json', 'r') as outfile:
         total = total - 1
         print(total)
         print(geoHash)
-        
+   
+     
 with open('SmallData.json', 'w') as outfile:
     json.dump(data, outfile, indent=4)
 
