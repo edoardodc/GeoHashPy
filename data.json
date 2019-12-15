@@ -1,0 +1,35 @@
+{
+    "Fountains": [
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/34034190",
+                "amenity": "drinking_water",
+                "note": "not sure if it is safe to drink"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.2249071,
+                    51.8595535
+                ]
+            },
+            "id": "node/34034190"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "@id": "node/248169423",
+                "amenity": "drinking_water"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.5560989,
+                    51.5642143
+                ]
+            },
+            "id": "node/248169423"
+        }
+    ]
+}

@@ -1,25 +1,28 @@
 import json
-import pygeohash as pgh
 
+count = 0
 
-print(pgh.encode(19.4354778, -99.1364789, precision = 10))
-total = 41906
-
-with open('SmallData.json', 'r') as outfile:
+with open('data.json', 'r') as outfile:
     data = json.load(outfile)
-    for element in data:
-        latitude = element["l"][0]
-        longitude = element["l"][1]
-        geoHash = pgh.encode(latitude, longitude, precision = 10)
-        element["g"] = geoHash
-        total = total - 1
-        print(total)
-        print(geoHash)
+    myData = data["Fountains"]
+    for element in myData:
+        count += 1
+        print(count)
+        element.pop('properties', None)
+        element.pop('type', None)
+        element.pop('id', None)
+        geometry = element['geometry']
+        for el in list(geometry):
+            if 'type' == el:
+                del geometry['type']
+
         
-with open('SmallData.json', 'w') as outfile:
+
+        
+with open('new.json', 'w') as outfile:
     json.dump(data, outfile, indent=4)
 
 
 
-print(data)
+
 

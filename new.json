@@ -1,0 +1,20 @@
+{
+    "Fountains": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -1.2249071,
+                    51.8595535
+                ]
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -2.5560989,
+                    51.5642143
+                ]
+            }
+        }
+    ]
+}
