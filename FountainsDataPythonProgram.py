@@ -21,7 +21,7 @@ with open('data.json', 'r') as outfile:
         for el in list(geometry):
             
             coordinate = geometry['coordinates']
-            latitude = coordinate[0]
+            latitude = coordinate[1]
             longitude = coordinate[1]
             
         element.pop('geometry', None)
